@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak | Jeremiah</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0F141C;
+            font-family: 'Rubik', sans-serif;
+        }
+        .contact-hero {
+            min-height: 100vh;
+            padding-top: 100px;
+            background: linear-gradient(120deg, #0F141C 60%, #1C1F29 100%);
+        }
+        .contact-title {
+            color: #FFD54F;
+            font-weight: bold;
+        }
+        .contact-card {
+            background-color: #1C1F29;
+            border-radius: 15px;
+            box-shadow: 0px 6px 20px rgba(0,0,0,0.3);
+            padding: 2rem;
+            text-align: center;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #FFD54F;
+            margin-bottom: 1rem;
+        }
+        .motivation-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            color: #1C1F29;
+            font-size: 1.1rem;
+            font-style: italic;
+            box-shadow: 0px 4px 16px rgba(0,0,0,0.15);
+        }
+        .contact-info {
+            margin-top: 1.5rem;
+        }
+        .contact-info p {
+            margin-bottom: 0.5rem;
+            color: #FFD54F;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning" href="index.html">Biogi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-uppercase fw-semibold">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portofolio.html">Portofolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active text-warning" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-hero d-flex align-items-center text-light">
+        <div class="container">
+            <h1 class="contact-title display-4 mb-5 text-center">Kontak Saya</h1>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="contact-card">
+                        <!-- Foto Profil -->
+                        <img src="Images/JeremiahPaul_HoDPodcast.jpg" alt="Foto Saya" class="profile-img">
+                        <div class="contact-info">
+                            <p>Nama: Biogi</p>
+                            <p>Lokasi: Jakarta, Indonesia</p>
+                        </div>
+                        <!-- Kata Kata Motivasi -->
+                        <div class="motivation-card mt-4">
+                            "Jangan pernah menyerah, karena setiap usaha yang kamu lakukan hari ini adalah investasi untuk masa depanmu."
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-black text-center text-secondary">
+        <p class="mb-0">&copy; 2025 Biogi. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

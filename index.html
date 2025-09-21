@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website Jeremiah</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Remix icon -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+</head>
+<body>
+    <div class="container"> 
+        <div class="nav">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <div style="width:56px; height:56px; border-radius:50%; overflow:hidden; box-shadow:0 4px 16px rgba(0,0,0,0.18); margin-right:12px; background:linear-gradient(135deg,#fff 70%,#ffe680 100%); display:flex; align-items:center; justify-content:center; border:2px solid #FFDB59;">
+                        <img src="Images/binus.png" alt="Logo" style="width:90%; height:90%; object-fit:cover; border-radius:50%;">
+                    </div>
+                    
+                </a>
+            </nav>
+    
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="portofolio.html">Portofolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <i class="ri-menu-3-line"></i>
+
+        </div>
+
+        <div class="hero-section">
+            <div class="social_wrapper">
+            <img src="Images/media-line-top.svg" alt="">
+            <div class="social">
+                <a href="https://x.com/jenos25" target="_blank">
+                <i class="ri-twitter-x-line"></i>
+                </a>
+            </div>
+            <div class="social">
+                <a href="https://www.tiktok.com/@jeree2506" target="_blank">
+                <i class="ri-tiktok-line"></i>
+                </a>
+            </div>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/jeremiah-paul-benyaminsz-951278351/" target="_blank">
+                <i class="ri-linkedin-line"></i>
+                </a>
+            </div>
+            <div class="social">
+                <a href="CV_JeremiahPaul.pdf" download="JeremiahPaul_CV.pdf">
+                    <i class="ri-file-user-line"></i>
+                </a>
+            </div>
+
+            <div class="social">
+                <a href="https://www.instagram.com/_jereepb_" target="_blank">
+                    <i class="ri-instagram-line"></i>
+                </a>
+            </div>
+
+             <div class="social">
+                <a href="https://github.com/codjere" target="_blank">
+                    <i class="ri-github-line"></i>
+                </a>
+            </div>
+            <img src="Images/media-line-bottom.svg" alt="">
+            </div>
+
+            <div class="hero-wrapper">
+                <div class="content">
+                    <p>Hello , I am <img src="Images/hand.png" id="handIc"></p>
+                    <h1><span>Jeremiah</span>Paul</h1>
+                </div>
+
+                <div class="hero-image">
+                    <div class="hero-name">
+                        <img src="Images/Polygon-arrow.svg">
+                        <h2>Computer Science Student
+                        
+                        </h2>
+                    </div>
+                    <img src="Images/mukaku.png" id="hero_img">
+
+                    <img src="Images/arrow-main.png" class="Arrow">
+
+                    <div class="clients">
+                        <p>Future Web Developer</p>
+                        <div class="images">
+                            <img src="Images/clients-img1.jpg" alt="">
+                            <img src="Images/clients-img2.jpg" alt="">
+                            <img src="Images/clients-img3.jpg" alt="">
+                            <img src="Images/clients-img4.jpg" alt="">
+                            <h3>Grow Up</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-container">
+                <div class="card_wrapper">
+                    <h3>
+                        <span>+++</span>
+                        Project Completed
+                    </h3>
+                </div>
+                <div class="card_wrapper">
+                    <p>
+                        As a <span>Computer Science student</span>, I have successfully completed several projects that showcase my passion for technology and problem-solving. I am dedicated to continuous learning and always strive to deliver innovative solutions through my work.
+                    </p>
+                </div>
+                <div class="card_wrapper">
+
+                    <div>
+                        <svg class="mouse-arrow-down"  xmlns="http://www.w3.org/2000/svg" width="24" height="40" viewBox="0 0 24 40" fill="none">
+                            <g clip-path="url(#clip0_37_162)">
+                                <path d="M12 5L12 35" stroke="#FFDB59" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M16 31L12 35" stroke="#FFDB59" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M8 31L12 35" stroke="#FFDB59" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_37_162">
+                                    <rect width="24" height="40" fill="white"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+
+                   <h5> Scroll Down</h5>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="FullMenu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="portofolio.html">Portfolio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <i class="ri-close-line"></i>
+
+    </div>
+
+    <script>
+        let bars = document.querySelector('.nav i');
+        let menu = document.querySelector('.FullMenu');
+        let CloseMenu = document.querySelector('.ri-close-line');
+
+        bars.addEventListener("click" , function () {
+            menu.classList.toggle('active');
+            CloseMenu.style.opacity="1"
+        })
+
+        CloseMenu.addEventListener("click" , function () {
+            menu.classList.toggle('active');
+            CloseMenu.style.opacity="0"
+        })
+    </script>
+</body>
+</html>
