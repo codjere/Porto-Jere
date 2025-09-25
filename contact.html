@@ -11,7 +11,17 @@
     <style>
         body {
             background-color: #0F141C;
-            font-family: 'Rubik', sans-serif;
+            font-family: 'Rubik', sans-serif;       
+            opacity: 0;
+            transition: opacity 1s ease;
+            transform: translateY(20px);
+            animation: fadeInPage 0.8s ease forwards;
+        }
+        @keyframes fadeInPage {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
         .contact-hero {
             min-height: 100vh;
@@ -103,7 +113,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold text-warning" href="index.html">Biogi</a>
+            <a class="navbar-brand fw-bold text-warning" href="index.html">Jeremiah Paul</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -174,7 +184,7 @@
 
     <!-- Footer -->
     <footer class="py-3 bg-black text-center text-secondary">
-        <p class="mb-0">&copy; 2025 Biogi. All rights reserved.</p>
+        <p class="mb-0">&copy; 2025 Jeremiah Paul. All rights reserved.</p>
     </footer>
 
     <!-- Bootstrap JS -->
