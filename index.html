@@ -112,6 +112,8 @@
         .hero-image-wrapper {
             max-width: 450px;
             margin: auto;
+            position: relative;
+            padding: 30px; /* Increased padding */
         }
         .hero-img {
             border-radius: 18px;
@@ -119,36 +121,51 @@
             position: relative;
             z-index: 2;
             animation: slideInLeft 1s ease forwards;
+            width: 100%;
+            height: auto;
+            display: block;
+            transform: translateY(10px); /* Adjust vertical position */
         }
         .hero-info {
             position: absolute;
-            top: 50px;
-            left: 10px;
+            top: 0;
+            left: 0;
             background: rgba(28, 31, 41, 0.7);
             backdrop-filter: blur(8px);
             border: 1px solid rgba(255, 213, 79, 0.5);
             border-radius: 12px;
             z-index: 3;
             animation: scaleIn 0.8s ease-out;
+            padding: 10px 15px;
+            white-space: nowrap;
+            transform: translateY(-50%) translateX(-20px);
+        }
+        .hero-info h2 {
+            font-size: 1.1rem;
         }
         .hero-info img { width: 24px; }
         .hero-arrow {
             width: 100px;
-            bottom: -20px;
-            right: -20px;
+            bottom: 5px;
+            right: 5px;
             transform: rotate(45deg);
             opacity: 0.8;
             animation: pulse 2s infinite;
+            position: absolute;
+            z-index: 3;
         }
         .clients-card {
+            position: absolute;
+            bottom: 0;
+            right: 0;
             background: rgba(28, 31, 41, 0.7);
             backdrop-filter: blur(8px);
             border: 1px solid rgba(255, 213, 79, 0.5);
             border-radius: 12px;
-            bottom: 0;
-            right: 0;
             z-index: 3;
             animation: scaleIn 0.8s ease-out;
+            padding: 10px 15px;
+            transform: translateY(50%) translateX(20px);
         }
         .clients-images img {
             width: 40px;
@@ -219,11 +236,23 @@
             .social-sidebar { display: none !important; }
             .hero-section { text-align: center; }
             .card_wrapper { margin: 10px auto; }
+            .hero-info {
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+            .clients-card {
+                bottom: 0;
+                right: 50%;
+                transform: translateX(50%) translateY(50%);
+            }
+            .hero-arrow {
+                bottom: 10px;
+                right: 10px;
+            }
         }
         @media (max-width: 767px) {
             .hero-content-wrapper { padding-top: 20px; }
-            .hero-info { top: 20px; left: 5px; }
-            .clients-card { bottom: -10px; right: 5px; }
             h1.display-1 { font-size: 3rem; }
             .skills-section { padding: 60px 0; }
         }
@@ -262,14 +291,14 @@
             <div class="hero-content-wrapper container-lg">
                 <div class="row align-items-center flex-lg-row-reverse">
                     <div class="col-lg-6 mb-5 mb-lg-0 text-center">
-                        <div class="hero-image-wrapper position-relative">
+                        <div class="hero-image-wrapper">
                             <div class="hero-info d-flex align-items-center justify-content-center p-3">
                                 <img src="Images/Polygon-arrow.svg" alt="Polygon" class="me-2 d-none d-sm-block">
                                 <h2 class="m-0 text-light fw-bold">Computer Science Student</h2>
                             </div>
-                            <img src="Images/mukaku.png" class="hero-img img-fluid" alt="Jeremiah Paul">
+                            <img src="Images/keren-removebg-preview.png" class="hero-img img-fluid mx-auto d-block" alt="Jeremiah Paul">
                             <img src="Images/arrow-main.png" class="hero-arrow position-absolute" alt="Arrow">
-                            <div class="clients-card position-absolute p-3 text-start">
+                            <div class="clients-card p-3 text-start">
                                 <p class="mb-2">Future Web Developer</p>
                                 <div class="clients-images d-flex align-items-center">
                                     <img src="Images/clients-img1.jpg" alt="Client 1">
